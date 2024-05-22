@@ -1,0 +1,270 @@
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.logo-style {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.nav-link {
+  font-weight: 900;
+  padding: 12px;
+}
+.navbar > div {
+  padding: 9rem 2;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+.nav-item > a {
+  background-image: linear-gradient(to right, #50A5B1, #72C7D3 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-item > a::before {
+    content: '';
+    background: #19204E;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+    .nav-item > a:hover {
+    background-position: 0;
+   }
+.nav-item > a:hover:before {
+    width: 100%;
+}
+.container {
+    padding: 1% 4%;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    padding-top: 3rem;
+
+}
+.social-links {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social-links > a {
+    color: #000;
+}
+
+.social-links:hover {
+    background-color: #b0528a;
+}
+
+.social-links:hover > a {
+    color: #fff;
+}
+.main-img-container img {
+    transition: all ease 1s;
+}
+@media screen and (max-width: 992px) {
+    .main-img-container img {
+        border-radius: 0;
+        max-width: 100%;
+        height: auto;
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    .main-img-container {
+        width: 60%;
+    }
+    .main-img-container img{
+        border-radius: 50%;
+    }
+}
+.title-text {
+    color:#b0528a;
+}
+.main-text {
+    position: relative;
+    padding-top: 1rem;
+    font-size: 14px;
+}
+.biography-group {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b0528a;
+}
+
+.biography-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #b0528a;
+}
+
+.biography-item > p {
+    padding: 0.6rem 0;
+    margin: 0;
+}
+.buttom-border {
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.experience-group {
+    margin-top: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+     padding-bottom: 0.9rem;
+    
+}
+.experience-group:not(:last-child) {
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+}
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+}
+.experience-item > p {
+    padding: 0.6rem 0;
+    margin: 0;
+}
+
+.experience-content {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 0.75rem;
+}
+ .experience-paragraph {
+    font-size: 15px;
+} 
+.experience-item, .education-item {
+    margin: 2rem 0;
+    padding-bottom: 0.9rem;
+}
+
+.award-item{
+    margin: 1.3rem 0;
+    padding-bottom: 0.9rem;
+}
+
+.skill-item {
+    margin: 1.2rem 0;
+
+}
+/* .experience-item:not(:last-child), .education-item:not(:last-child), .award-item:not(:last-child) {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.experience-item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.organization-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.experience-position {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+} */
+
+.description {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.duration {
+    padding: 0.15rem 0.6rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.award-name {
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.skill-percent {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: right;
+}
+.progress-bar-color {
+    background-color: #b0528a;
+}
+
+.hobby-text {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.hobby-badge {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin-bottom: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+.portfolio-caption {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+}
+
+#footer {
+    margin: 4rem 1rem 0;
+}
+
+#footer > div {
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 1rem 0 0.5rem;
+}
+
+.footer-text {
+    font-size: 0.75rem;
+}
+.portfolio-img {
+    width: 100%;
+    max-height: 400px;
+    margin: auto;
+    object-fit: cover;
+}
+
